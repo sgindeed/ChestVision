@@ -1,41 +1,47 @@
-# 🩻 ChestVision – AI-Powered Chest X-Ray Classification
 
-> Detect COVID-19, Lung Opacity, Normal lungs, and Viral Pneumonia in X-ray images using deep learning.
+# 🩻 ChestVision – AI-Powered Chest X-Ray Classifier
 
-![Made with love](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20and%20%E2%9A%A1-blueviolet)
+> Classify Chest X-rays into COVID-19, Lung Opacity, Normal, and Viral Pneumonia using Deep Learning, now lightning-fast with **TensorFlow Lite**! ⚡
+
+![Made with love](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20and%20TFLite-blueviolet)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-%23009688)
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)
+![Render](https://img.shields.io/badge/API%20on-Render-%2300c7b7)
 
 ---
 
 ## 🌐 Live Demo
 
-🚀 **Frontend**: [https://chestvision.vercel.app](https://chestvision.vercel.app)  
-🧠 **API Endpoint**: [https://chestvision-api.onrender.com/predict](https://chestvision-api.onrender.com/predict)
+🔵 **Frontend**: [chestvision.vercel.app](https://chestvision.vercel.app)  
+🧠 **API**: [chestvision-api.onrender.com/predict](https://chestvision-api.onrender.com/predict)
 
 ---
 
 ## 📸 What is ChestVision?
 
-ChestVision is an AI-powered web app that uses a trained VGG16 deep learning model to classify chest radiography (X-ray) images into:
+ChestVision is a web app that lets you **upload chest X-rays** and get **instant disease prediction** using a deep learning model trained on real radiology data.
 
-- 🦠 COVID-19  
-- ☁️ Lung Opacity  
-- ✅ Normal  
-- 🧬 Viral Pneumonia
+It classifies images into:
+- 🦠 **COVID-19**  
+- ☁️ **Lung Opacity**  
+- ✅ **Normal**  
+- 🧬 **Viral Pneumonia**
 
-Upload an X-ray and get instant predictions backed by powerful AI. Built with **FastAPI + TensorFlow** on the backend and a **React.js** frontend. Clean UI, fast performance, and totally free to use.
+Built with 🐍 FastAPI + ⚛️ React + 🧠 TensorFlow Lite for blazing fast predictions 🚀
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Tech       | Role                      |
-|------------|---------------------------|
-| 🐍 Python  | Backend API (FastAPI)     |
-| 🧠 TensorFlow | Image Classification Model |
-| ⚛️ React.js | Frontend (Upload & Display) |
-| 🎨 CSS      | Styling (shades of blue & black) |
-| ☁️ Render   | Backend Deployment        |
-| ⚡ Vercel   | Frontend Deployment       |
+| Tech         | Purpose                          |
+|--------------|----------------------------------|
+| 🐍 Python     | Backend API with FastAPI         |
+| ⚡ TFLite      | Lightweight, fast image prediction |
+| ⚛️ React.js    | Frontend interface               |
+| 🎨 CSS        | Stylish UI (dark + blue theme)   |
+| ☁️ Render     | Backend Hosting                  |
+| ⚡ Vercel     | Frontend Hosting                 |
 
 ---
 
@@ -43,33 +49,30 @@ Upload an X-ray and get instant predictions backed by powerful AI. Built with **
 
 ```
 ChestVision/
-├── app.py                        # FastAPI backend
-├── covid19_vgg16_combined.h5    # Trained VGG16 model
-├── requirements.txt             # Dependencies for API
-├── Procfile                     # For Render deployment
-├── static/                      # Unused in frontend
-│   └── uploads/                 # Image uploads
-├── templates/                   # Base HTML (not used in React)
-├── frontend/                    # React App here
+├── api.py                         # FastAPI app with TFLite model
+├── covid19_vgg16_combined.tflite # TFLite model file
+├── requirements.txt              # Python dependencies
+├── Procfile                      # For Render deployment
+├── frontend/                     # React frontend
 │   ├── public/
 │   └── src/
-└── README.md                    # You're reading it 😉
+└── README.md                     # This file 😉
 ```
 
 ---
 
-## 🛠️ Getting Started
+## 🚀 Getting Started
 
-### 🧪 Backend (FastAPI)
+### 🔧 Backend (FastAPI + TFLite)
 
 ```bash
 git clone https://github.com/sgindeed/ChestVision.git
 cd ChestVision
 pip install -r requirements.txt
-python app.py
+python api.py
 ```
 
-> ⚠️ Ensure your model file `covid19_vgg16_combined.h5` is in the same directory.
+> Make sure `covid19_vgg16_combined.tflite` is present in the root directory.
 
 ---
 
@@ -81,39 +84,42 @@ npm install
 npm start
 ```
 
-This will run your frontend on `http://localhost:3000`, connected to your backend at `http://localhost:8000`.
+> App will run locally at `http://localhost:3000`, calling backend on port `8000`.
 
 ---
 
 ## 🌟 Features
 
-✅ Upload chest X-ray images  
-📊 Get AI predictions in real-time  
-📱 Fully responsive UI  
-🖤 Dark-themed with blue-black gradients  
-🚀 Deployed & production-ready
+✨ Upload Chest X-ray images  
+🧠 Instant classification with TFLite  
+📱 Fully responsive & mobile-ready  
+🖤 Modern UI with dark-blue theme  
+🚀 Hosted & production-ready
 
 ---
 
 ## 🧠 Model Info
 
 - Architecture: **VGG16**
-- Trained on: Publicly available chest X-ray dataset
-- Output Classes: `["COVID-19", "Lung_Opacity", "Normal", "Viral Pneumonia"]`
+- Converted to: **TensorFlow Lite (.tflite)**
+- Classes:
+  - COVID-19
+  - Lung Opacity
+  - Normal
+  - Viral Pneumonia
 
 ---
 
 ## 💌 Credits
 
-Made with ❤️ and ⚡ by **Supratim**
+Made with ❤️ and ⚡ by [**Supratim**](https://github.com/sgindeed)
 
 [![GitHub](https://img.shields.io/badge/GitHub-sgindeed-181717?style=for-the-badge&logo=github)](https://github.com/sgindeed)
 
 ---
 
-## 🌈 Show Some Love
+## 🌈 Support
 
-If you liked this project, drop a ⭐ on [GitHub](https://github.com/sgindeed/ChestVision)  
-or share it with your tech buddies 💬
-
+If you find this helpful, leave a ⭐ on [GitHub](https://github.com/sgindeed/ChestVision)  
+and share
 ```
