@@ -112,9 +112,15 @@ npm start
 
 ## 💌 Credits
 
-Made with ❤️ and ⚡ by [**Supratim**](https://github.com/sgindeed)
+Made with ❤️ and ⚡ by:
+
+• [**Supratim**](https://github.com/sgindeed)
 
 [![GitHub](https://img.shields.io/badge/GitHub-sgindeed-181717?style=for-the-badge&logo=github)](https://github.com/sgindeed)
+
+• [**Arpita**](https://github.com/Arpita23r)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Arpita23r-181717?style=for-the-badge&logo=github)](https://github.com/Arpita23r)
 
 ---
 
