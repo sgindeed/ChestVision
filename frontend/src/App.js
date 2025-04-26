@@ -61,7 +61,7 @@ export default function App() {
       )}
 
       <footer>
-        Made with ❤️ and ⚡ by Arpita
+        Made with ❤️ and ⚡ by Arpita (ML, Vercel Deployment) and Supratim (ML, Flask and React)
       </footer>
     </div>
   );
