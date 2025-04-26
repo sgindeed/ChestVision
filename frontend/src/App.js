@@ -61,7 +61,7 @@ export default function App() {
       )}
 
       <footer>
-        Made with ❤️ and ⚡ by Supratim
+        Made with ❤️ and ⚡ by Arpita
       </footer>
     </div>
   );
