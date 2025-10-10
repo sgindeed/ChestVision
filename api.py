@@ -5,6 +5,7 @@ import numpy as np
 from PIL import Image
 import tensorflow as tf
 import os
+import pandas as pd
 
 app = FastAPI()
 
